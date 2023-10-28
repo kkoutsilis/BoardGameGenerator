@@ -1,6 +1,7 @@
-package com.kkoutsilis.model;
+package com.kkoutsilis.model.messages;
 
 import com.kkoutsilis.Game;
+import com.kkoutsilis.model.Player;
 import com.kkoutsilis.model.squares.Square;
 
 import java.util.List;

@@ -2,9 +2,9 @@ package com.kkoutsilis;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.kkoutsilis.model.Dice;
-import com.kkoutsilis.model.Messages;
+import com.kkoutsilis.model.messages.Messages;
 import com.kkoutsilis.model.Player;
-import com.kkoutsilis.model.SimpleMessages;
+import com.kkoutsilis.model.messages.SimpleMessages;
 import com.kkoutsilis.model.boards.Board;
 import com.kkoutsilis.model.cards.Card;
 import com.kkoutsilis.model.cards.CardPower;

@@ -3,9 +3,9 @@ package com.kkoutsilis.model.condition;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.kkoutsilis.Game;
 import com.kkoutsilis.Status;
-import com.kkoutsilis.model.Messages;
+import com.kkoutsilis.model.messages.Messages;
 import com.kkoutsilis.model.Player;
-import com.kkoutsilis.model.SimpleMessages;
+import com.kkoutsilis.model.messages.SimpleMessages;
 import com.kkoutsilis.model.boards.Board;
 
 public class ConditionSnake implements Condition {
