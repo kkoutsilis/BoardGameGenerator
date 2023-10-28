@@ -9,8 +9,7 @@ import java.util.List;
 import java.util.Random;
 
 public class ListCreatorSnake {
-    public ListCreatorSnake() {
-    }
+    
     public List<Square> getSnakeList(int numOfSquares) {
         List<Square> squareList = new ArrayList<>();
         Random random = new Random();

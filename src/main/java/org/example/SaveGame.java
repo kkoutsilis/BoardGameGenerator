@@ -8,7 +8,7 @@ import java.io.IOException;
 public class SaveGame {
     public void save(Game game) throws IOException {
         //TODO: MUST FIX SERIALIZATION TO WORK PROPERLY
-        GameConfiguration gameConfiguration= new GameConfiguration();
+        GameConfiguration gameConfiguration = new GameConfiguration();
         gameConfiguration.setBoard(game.getBoard());
         gameConfiguration.setCurrentPlayer(game.getCurrentPlayer());
         gameConfiguration.setPlayerList(game.getPlayerLinkedList());

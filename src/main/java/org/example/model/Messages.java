@@ -1,8 +1,6 @@
 package org.example.model;
 
 import org.example.Game;
-import org.example.Status;
-import org.example.model.Player;
 import org.example.model.squares.Square;
 
 import java.util.List;

@@ -8,7 +8,7 @@ public class SquareMovement implements Square {
     private int steps;
 
     @JsonCreator
-    public SquareMovement(@JsonProperty("steps")int steps) {
+    public SquareMovement(@JsonProperty("steps") int steps) {
         this.steps = steps;
     }
 

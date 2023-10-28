@@ -15,5 +15,6 @@ import static com.fasterxml.jackson.annotation.JsonTypeInfo.Id.NAME;
 })
 public interface Card {
     void action(Game game);
+
     String getMessage();
 }

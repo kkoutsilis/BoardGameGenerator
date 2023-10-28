@@ -7,8 +7,7 @@ import org.example.Game;
 import org.example.model.Player;
 import org.example.model.squares.Square;
 
-
-import java.util.*;
+import java.util.List;
 
 import static java.lang.StrictMath.abs;
 

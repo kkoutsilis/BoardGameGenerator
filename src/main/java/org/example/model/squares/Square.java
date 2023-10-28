@@ -14,10 +14,11 @@ import static com.fasterxml.jackson.annotation.JsonTypeInfo.Id.NAME;
         @JsonSubTypes.Type(value = SimpleSquare.class, name = "SimpleSquare"),
         @JsonSubTypes.Type(value = SquareMovement.class, name = "SquareMovement"),
         @JsonSubTypes.Type(value = SquareCard.class, name = "SquareCard"),
-        @JsonSubTypes.Type(value =  SquareLoseTurn.class, name = "SquareLoseTurn")
+        @JsonSubTypes.Type(value = SquareLoseTurn.class, name = "SquareLoseTurn")
 })
 public interface Square {
     void action(Game game);
+
     String getMessage();
 
 }

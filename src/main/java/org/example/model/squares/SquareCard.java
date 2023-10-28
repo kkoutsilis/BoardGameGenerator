@@ -23,7 +23,7 @@ public class SquareCard implements Square {
         try {
             return card.getMessage();
         } catch (Exception e) {
-           return "There is no card";
+            return "There is no card";
         }
     }
 
