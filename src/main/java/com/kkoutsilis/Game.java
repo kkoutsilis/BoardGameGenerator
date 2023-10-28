@@ -2,13 +2,13 @@ package com.kkoutsilis;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.kkoutsilis.model.Dice;
-import com.kkoutsilis.model.messages.Messages;
 import com.kkoutsilis.model.Player;
-import com.kkoutsilis.model.messages.SimpleMessages;
 import com.kkoutsilis.model.boards.Board;
 import com.kkoutsilis.model.cards.Card;
 import com.kkoutsilis.model.cards.CardPower;
 import com.kkoutsilis.model.condition.Condition;
+import com.kkoutsilis.model.messages.Messages;
+import com.kkoutsilis.model.messages.SimpleMessages;
 
 import java.util.LinkedList;
 import java.util.List;
