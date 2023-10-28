@@ -1,7 +1,5 @@
 # Board Game Generator
 
-This project, developed as part of my Programming Methodology class, marks my debut into Java programming. The journey was enriching, offering valuable insights and learning opportunities.
-
 ## Project Overview
 
 The Board Game Generator is designed to read a JSON file that describes a board game. The program then uses this information to dynamically generate the game, allowing you to dive right into playing.
