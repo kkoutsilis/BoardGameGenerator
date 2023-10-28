@@ -8,7 +8,7 @@ import java.io.FileReader;
 public class App {
     public static void main(String[] args) {
         try {
-            GameConfiguration gameConfiguration = new ObjectMapper().readValue(new FileReader(new File("game21.json")), GameConfiguration.class);
+            GameConfiguration gameConfiguration = new ObjectMapper().readValue(new FileReader(new File("games/game21.json")), GameConfiguration.class);
             Game game = new Game(gameConfiguration);
             game.startGame();
         } catch (Exception e) {
