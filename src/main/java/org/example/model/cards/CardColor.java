@@ -19,10 +19,11 @@ public class CardColor implements Card {
     public void action(Game game) {
         game.getCurrentPlayer().setPlayerCard(this);
     }
+
     @JsonIgnore
     @Override
     public String getMessage() {
-        return "Its a "+ color + " card";
+        return "Its a " + color + " card";
     }
 
 

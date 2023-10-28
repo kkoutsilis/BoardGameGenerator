@@ -1,9 +1,9 @@
 package org.example;
 
 import org.example.model.Dice;
+import org.example.model.Player;
 import org.example.model.boards.Board;
 import org.example.model.cards.Card;
-import org.example.model.Player;
 import org.example.model.condition.Condition;
 
 import java.util.LinkedList;

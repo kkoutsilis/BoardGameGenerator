@@ -12,7 +12,7 @@ public class Dice {
     }
 
     public Dice() {
-        this(0,0);
+        this(0, 0);
     }
 
     public int rollDice() {

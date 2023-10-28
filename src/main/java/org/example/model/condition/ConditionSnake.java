@@ -1,12 +1,12 @@
 package org.example.model.condition;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import org.example.Game;
+import org.example.Status;
 import org.example.model.Messages;
+import org.example.model.Player;
 import org.example.model.SimpleMessages;
 import org.example.model.boards.Board;
-import org.example.Game;
-import org.example.model.Player;
-import org.example.Status;
 
 public class ConditionSnake implements Condition {
     private Player winner;

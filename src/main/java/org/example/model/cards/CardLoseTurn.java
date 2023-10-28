@@ -3,7 +3,7 @@ package org.example.model.cards;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.example.Game;
 
-public class CardLoseTurn implements Card{
+public class CardLoseTurn implements Card {
     public CardLoseTurn() {
     }
 

@@ -3,13 +3,12 @@ package org.example;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.example.model.Dice;
 import org.example.model.Messages;
+import org.example.model.Player;
 import org.example.model.SimpleMessages;
 import org.example.model.boards.Board;
 import org.example.model.cards.Card;
-import org.example.model.Player;
 import org.example.model.cards.CardPower;
 import org.example.model.condition.Condition;
-
 
 import java.util.LinkedList;
 import java.util.List;
@@ -60,8 +59,7 @@ public class Game {
             messages.squareEvent(player.getCurrentSquare());
             messages.movePosition(this);
             status = condition.getCondition(this);
-            if (!this.getPlayerLinkedList().isEmpty())
-                player = playerList.getNextPlayer();
+            if (!this.getPlayerLinkedList().isEmpty()) player = playerList.getNextPlayer();
         } while (status != Status.FINISH);
         condition.showWinner();
     }

@@ -11,8 +11,6 @@ public class PlayerList {
     private LinkedList<Player> playerList = new LinkedList<>();
     private Player currentPlayer;
 
-    public PlayerList() {
-    }
 
     public PlayerList(List<Player> playerList) {
         this.playerList = (LinkedList<Player>) playerList;

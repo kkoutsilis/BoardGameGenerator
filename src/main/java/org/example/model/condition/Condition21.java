@@ -2,7 +2,6 @@ package org.example.model.condition;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.example.Game;
-
 import org.example.Status;
 import org.example.model.Messages;
 import org.example.model.Player;
