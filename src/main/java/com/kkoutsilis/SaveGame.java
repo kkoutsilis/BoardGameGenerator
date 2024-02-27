@@ -18,10 +18,9 @@ public class SaveGame {
 
         ObjectMapper mapper = new ObjectMapper();
         String savedGame = mapper.writeValueAsString(gameConfiguration);
-        try {
-            FileWriter myWriter = new FileWriter("save.json");
+        
+        try(FileWriter myWriter = new FileWriter("save.json")) {
             myWriter.write(savedGame);
-            myWriter.close();
             System.out.println("Successfully saved the game.");
         } catch (IOException e) {
             System.out.println("An error occurred while saving the game.");

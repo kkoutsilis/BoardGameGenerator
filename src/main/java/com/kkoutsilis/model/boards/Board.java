@@ -22,7 +22,7 @@ public abstract class Board {
     }
 
     @JsonGetter
-    public List getSquareList() {
+    public List<Square> getSquareList() {
         return this.squareList;
     }
 
