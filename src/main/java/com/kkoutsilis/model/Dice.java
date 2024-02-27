@@ -3,8 +3,9 @@ package com.kkoutsilis.model;
 import java.util.Random;
 
 public class Dice {
-    int numberOfDices;
-    int diceCapacity;
+    private Random random = new Random();
+    private int numberOfDices;
+    private int diceCapacity;
 
     public Dice(int numberOfDices, int diceCapacity) {
         this.numberOfDices = numberOfDices;
@@ -17,8 +18,7 @@ public class Dice {
 
     public int rollDice() {
         int minLimit = 1;
-        Random rand = new Random();
-        return (rand.nextInt(numberOfDices * diceCapacity) + minLimit);
+        return (this.random.nextInt(numberOfDices * diceCapacity) + minLimit);
     }
 
     public int getNumberOfDices() {

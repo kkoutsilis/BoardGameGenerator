@@ -1,12 +1,12 @@
 package com.kkoutsilis;
 
+import java.util.LinkedList;
+
 import com.kkoutsilis.model.Dice;
 import com.kkoutsilis.model.Player;
 import com.kkoutsilis.model.boards.Board;
 import com.kkoutsilis.model.cards.Card;
 import com.kkoutsilis.model.condition.Condition;
-
-import java.util.LinkedList;
 
 public class GameConfiguration {
     private Board board;
@@ -16,7 +16,8 @@ public class GameConfiguration {
     private LinkedList<Card> cardDeck;
     private Dice dice;
 
-    public GameConfiguration(Board board, Condition condition, LinkedList<Player> playerList, Player currentPlayer, LinkedList<Card> cardDeck, Dice dice) {
+    public GameConfiguration(Board board, Condition condition, LinkedList<Player> playerList, Player currentPlayer,
+            LinkedList<Card> cardDeck, Dice dice) {
         this.board = board;
         this.condition = condition;
         this.playerList = playerList;

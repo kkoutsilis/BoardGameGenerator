@@ -1,14 +1,12 @@
 package com.kkoutsilis.model.messages;
 
-import com.kkoutsilis.Game;
-import com.kkoutsilis.model.Player;
-import com.kkoutsilis.model.messages.Messages;
-import com.kkoutsilis.model.squares.Square;
-
 import java.util.List;
 
-public class SimpleMessages implements Messages {
+import com.kkoutsilis.Game;
+import com.kkoutsilis.model.Player;
+import com.kkoutsilis.model.squares.Square;
 
+public class SimpleMessages implements Messages {
 
     public void winnerEvent(Player winner) {
         System.out.println("\nCongratulations " + winner.getName() + " you WON the game!!!\n");
@@ -19,7 +17,8 @@ public class SimpleMessages implements Messages {
     }
 
     public void movePosition(Game game) {
-        System.out.println(game.getCurrentPlayer().getName() + " is at position " + game.getCurrentPlayersPosition() + "\n");
+        System.out.println(
+                game.getCurrentPlayer().getName() + " is at position " + game.getCurrentPlayersPosition() + "\n");
     }
 
     public void whoPlays(Player player) {
@@ -41,7 +40,6 @@ public class SimpleMessages implements Messages {
     public void squareEvent(Square square) {
         System.out.println(square.getMessage());
     }
-
 
     @Override
     public void separator() {

@@ -4,7 +4,6 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.kkoutsilis.Game;
 import com.kkoutsilis.model.Color;
 
-
 public class CardColor implements Card {
     private Color color;
 
@@ -25,7 +24,6 @@ public class CardColor implements Card {
     public String getMessage() {
         return "Its a " + color + " card";
     }
-
 
     public Color getColor() {
         return color;

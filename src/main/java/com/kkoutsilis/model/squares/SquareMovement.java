@@ -1,8 +1,11 @@
 package com.kkoutsilis.model.squares;
 
-import com.fasterxml.jackson.annotation.*;
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonGetter;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonSetter;
 import com.kkoutsilis.Game;
-
 
 public class SquareMovement implements Square {
     private int steps;

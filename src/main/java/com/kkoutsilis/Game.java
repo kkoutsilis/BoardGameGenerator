@@ -1,5 +1,9 @@
 package com.kkoutsilis;
 
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Scanner;
+
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.kkoutsilis.model.Dice;
 import com.kkoutsilis.model.Player;
@@ -9,11 +13,6 @@ import com.kkoutsilis.model.cards.CardPower;
 import com.kkoutsilis.model.condition.Condition;
 import com.kkoutsilis.model.messages.Messages;
 import com.kkoutsilis.model.messages.SimpleMessages;
-
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Scanner;
-
 
 public class Game {
 
@@ -59,9 +58,11 @@ public class Game {
             messages.squareEvent(player.getCurrentSquare());
             messages.movePosition(this);
             status = condition.getCondition(this);
-            if (!this.getPlayerLinkedList().isEmpty()) player = playerList.getNextPlayer();
+            if (!this.getPlayerLinkedList().isEmpty())
+                player = playerList.getNextPlayer();
         } while (status != Status.FINISH);
         condition.showWinner();
+        scanner.close();
     }
 
     public void moveCurrentPayer(int steps) {
@@ -81,7 +82,6 @@ public class Game {
     public Board getBoard() {
         return board;
     }
-
 
     public Player getCurrentPlayer() {
         return playerList.getCurrentPlayer();

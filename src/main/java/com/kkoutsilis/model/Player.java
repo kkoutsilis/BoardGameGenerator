@@ -1,9 +1,9 @@
 package com.kkoutsilis.model;
 
+import java.util.List;
+
 import com.kkoutsilis.model.cards.Card;
 import com.kkoutsilis.model.squares.Square;
-
-import java.util.List;
 
 public class Player {
     private String name;
@@ -11,7 +11,6 @@ public class Player {
     private boolean playersTurn = true;
     private int power = 0;
     private List<Card> cardList;
-
 
     public Player(String name) {
         this.name = name;
@@ -55,8 +54,8 @@ public class Player {
     }
 
     public void action() {
+        // For player to have an action?
     }
-
 
     public void setName(String name) {
         this.name = name;

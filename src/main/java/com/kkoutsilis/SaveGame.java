@@ -1,13 +1,13 @@
 package com.kkoutsilis;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-
 import java.io.FileWriter;
 import java.io.IOException;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+
 public class SaveGame {
     public void save(Game game) throws IOException {
-        //TODO: MUST FIX SERIALIZATION TO WORK PROPERLY
+        // TODO: MUST FIX SERIALIZATION TO WORK PROPERLY
         GameConfiguration gameConfiguration = new GameConfiguration();
         gameConfiguration.setBoard(game.getBoard());
         gameConfiguration.setCurrentPlayer(game.getCurrentPlayer());

@@ -1,25 +1,24 @@
 package com.kkoutsilis;
 
+import java.util.LinkedList;
+import java.util.List;
+
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.kkoutsilis.model.Player;
 import com.kkoutsilis.model.squares.Square;
 
-import java.util.LinkedList;
-import java.util.List;
-
 public class PlayerList {
-    private LinkedList<Player> playerList = new LinkedList<>();
+    private LinkedList<Player> playersList = new LinkedList<>();
     private Player currentPlayer;
 
-
     public PlayerList(List<Player> playerList) {
-        this.playerList = (LinkedList<Player>) playerList;
-        currentPlayer = this.playerList.poll();
+        this.playersList = (LinkedList<Player>) playerList;
+        currentPlayer = this.playersList.poll();
     }
 
     public PlayerList(Player currentPlayer, LinkedList<Player> playerList) {
         this.currentPlayer = currentPlayer;
-        this.playerList = playerList;
+        this.playersList = playerList;
     }
 
     public Player getCurrentPlayer() {
@@ -29,10 +28,10 @@ public class PlayerList {
     @JsonIgnore
     public Player getNextPlayer() {
         if (currentPlayer != null) {
-            playerList.offer(currentPlayer);
+            playersList.offer(currentPlayer);
         }
-        currentPlayer = playerList.poll();
-        if (!currentPlayer.isPlayersTurn() && currentPlayer != null) {
+        currentPlayer = playersList.poll();
+        if (!currentPlayer.isPlayersTurn()) {
             currentPlayer.setPlayersTurn(true);
             return getNextPlayer();
         } else {
@@ -42,9 +41,9 @@ public class PlayerList {
 
     @JsonIgnore
     public Player removePlayer() {
-        playerList.offer(currentPlayer);
+        playersList.offer(currentPlayer);
         currentPlayer = null;
-        return playerList.pollLast();
+        return playersList.pollLast();
 
     }
 
@@ -59,20 +58,20 @@ public class PlayerList {
     }
 
     public LinkedList<Player> getPlayerLinkedList() {
-        return playerList;
+        return playersList;
     }
 
     public void setPlayer(Player player) {
-        if (playerList.isEmpty() && currentPlayer == null) {
+        if (playersList.isEmpty() && currentPlayer == null) {
             currentPlayer = player;
         } else {
-            playerList.offer(player);
+            playersList.offer(player);
         }
     }
 
     public void setPlayerList(List<Player> playerList) {
-        this.playerList = (LinkedList<Player>) playerList;
-        currentPlayer = this.playerList.poll();
+        this.playersList = (LinkedList<Player>) playerList;
+        currentPlayer = this.playersList.poll();
     }
 
     public void setCurrentPlayer(Player currentPlayer) {

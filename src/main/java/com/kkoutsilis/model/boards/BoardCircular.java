@@ -1,15 +1,15 @@
 package com.kkoutsilis.model.boards;
 
+import static java.lang.StrictMath.abs;
+
+import java.util.List;
+
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.kkoutsilis.Game;
 import com.kkoutsilis.model.Player;
 import com.kkoutsilis.model.squares.Square;
-
-import java.util.List;
-
-import static java.lang.StrictMath.abs;
 
 public class BoardCircular extends Board {
     @JsonCreator
@@ -19,7 +19,6 @@ public class BoardCircular extends Board {
 
     public BoardCircular() {
     }
-
 
     @JsonIgnore
     @Override

@@ -1,10 +1,10 @@
 package com.kkoutsilis.model.messages;
 
+import java.util.List;
+
 import com.kkoutsilis.Game;
 import com.kkoutsilis.model.Player;
 import com.kkoutsilis.model.squares.Square;
-
-import java.util.List;
 
 public interface Messages {
     void winnerEvent(Player winner);
@@ -22,7 +22,6 @@ public interface Messages {
     void turnLose(Player player);
 
     void squareEvent(Square square);
-
 
     void separator();
 

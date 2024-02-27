@@ -1,7 +1,6 @@
 package com.kkoutsilis.model.squares;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-
 import com.kkoutsilis.Game;
 import com.kkoutsilis.model.cards.Card;
 
